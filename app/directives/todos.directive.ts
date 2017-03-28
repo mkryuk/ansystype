@@ -1,5 +1,5 @@
-﻿import { ITodo } from "../interfaces/itodo";
-import { IDataService } from "../interfaces/idataservice";
+﻿import { ITodo } from "interfaces/itodo";
+import { IDataService } from "interfaces/idataservice";
 
 export class TodosDirective {
   static $inject = ["dataService"];

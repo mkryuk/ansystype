@@ -1,9 +1,9 @@
 import * as angular from "angular";
 import uiRouter from "angular-ui-router";
-import dataService from "./services/data.service";
-import todosDirective from "./directives/todos.directive";
-import Router from "./routes/app.routes";
-import MainController from "./controllers/mainController/main.controller";
+import dataService from "services/data.service";
+import todosDirective from "directives/todos.directive";
+import Router from "routes/app.routes";
+import MainController from "controllers/mainController/main.controller";
 
 // creating main app module and MainController
 angular
