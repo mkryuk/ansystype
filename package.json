@@ -1,0 +1,38 @@
+{
+  "name": "ansystype",
+  "version": "1.0.0",
+  "description": "An example on how to use TypeScript with AngularJS 1.* and SystemJS module loader",
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
+    "cleanup": "find ./app -name \\*.js -delete -o -name \\*.map -delete"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/mkryuk/ansystype.git"
+  },
+  "keywords": [
+    "angular",
+    "typescript",
+    "systemjs"
+  ],
+  "author": "Maxim Kryuk <https://gitlab.com/mkryuk>",
+  "license": "MIT",
+  "homepage": "https://gitlab.com/mkryuk/ansystype#readme",
+  "devDependencies": {
+    "@types/angular-ui-router": "^1.1.36",
+    "@types/angular": "^1.6.9",
+    "@types/systemjs": "^0.20.2",
+    "concurrently": "^3.4.0",
+    "lite-server": "^2.3.0",
+    "typescript": "^2.2.1"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.2",
+    "bootstrap": "^3.3.7",
+    "systemjs": "^0.19.9"
+  }
+}

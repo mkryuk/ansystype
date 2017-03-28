@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-strict-di>
+
+<head>
+  <meta charset="utf-8" />
+  <title>AngularJS, TypeScript & SystemJS</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <base href="/">
+</head>
+
+<body>
+  <ul class="nav nav-tabs">
+    <li role="presentation" ng-class="{active: $state.includes('home')}"><a href="#" ui-sref="home">Home</a></li>
+    <li role="presentation" ng-class="{active: $state.includes('todos')}"><a ui-sref="todos">Todos</a></li>
+  </ul>
+  <div ui-view></div>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <script src="config.js"></script>
+  <script>
+    System
+      .import('app/boot');
+  </script>
+</body>
+
+</html>
