@@ -9,10 +9,7 @@
 </head>
 
 <body>
-  <ul class="nav nav-tabs">
-    <li role="presentation" ng-class="{active: $state.includes('home')}"><a href="#" ui-sref="home">Home</a></li>
-    <li role="presentation" ng-class="{active: $state.includes('todos')}"><a ui-sref="todos">Todos</a></li>
-  </ul>
+  <main-menu></main-menu>
   <div ui-view></div>
   <script src="node_modules/systemjs/dist/system.src.js"></script>
   <script src="config.js"></script>

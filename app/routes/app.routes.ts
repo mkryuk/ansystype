@@ -12,13 +12,17 @@ export default class Router {
     $stateProvider
       .state("home", {
         url: "/home",
-        templateUrl: "app/views/home.html",
+        templateUrl: "app/views/home.layout.html",
         controller: MainController,
         controllerAs: "mainCtrl"
       })
       .state("todos", {
         url: "/todos",
-        templateUrl: "app/views/directive.html"
+        templateUrl: "app/views/todo.layout.html"
+      })
+      .state("login", {
+        url: "/login",
+        templateUrl: "app/views/login.layout.html"
       });
   }
 }
