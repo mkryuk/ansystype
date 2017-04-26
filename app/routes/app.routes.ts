@@ -1,4 +1,4 @@
-import MainController from "controllers/mainController/main.controller";
+import { MainController } from "controllers/mainController/main.controller";
 
 export default class Router {
   static $inject = ["$stateProvider", "$urlRouterProvider"];

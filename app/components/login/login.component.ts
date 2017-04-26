@@ -19,6 +19,7 @@ export class LoginComponent {
       });
   }
 }
+
 export default function loginComponent(): ng.IDirective {
   return {
     restrict: "E",

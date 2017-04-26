@@ -1,5 +1,5 @@
 import * as angular from "angular";
-import MainController from "controllers/mainController/main.controller";
+import { MainController } from "controllers/mainController/main.controller";
 import Router from "routes/app.routes";
 import uiRouter from "angular-ui-router";
 // services

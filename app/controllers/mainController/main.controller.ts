@@ -1,6 +1,7 @@
 import { IAuthService } from "interfaces/iauthservice";
 
-export default class MainController {
+export class MainController {
+  static $inject = ["authService"];
   message: string;
   counter: number;
   constructor(private authService: IAuthService) {
