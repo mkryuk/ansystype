@@ -2,7 +2,7 @@ import { IUser } from "interfaces/iuser";
 import { IAuthService } from "interfaces/iauthservice";
 import { } from "angular-local-storage";
 
-export default class AuthService implements IAuthService {
+export class AuthService implements IAuthService {
   static $inject = ["$http", "$q", "$window"];
   public loggedInUser: IUser;
   constructor(

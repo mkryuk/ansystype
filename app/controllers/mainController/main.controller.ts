@@ -1,7 +1,7 @@
 import { IAuthService } from "interfaces/iauthservice";
 
 export class MainController {
-  static $inject = ["authService"];
+  static $inject = ["AuthService"];
   message: string;
   counter: number;
   constructor(private authService: IAuthService) {
@@ -13,5 +13,4 @@ export class MainController {
   increaseCounter() {
     this.counter++;
   }
-
 }

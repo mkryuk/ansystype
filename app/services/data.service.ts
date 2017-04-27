@@ -2,7 +2,7 @@ import { ITodo } from "../interfaces/itodo";
 import { IUser } from "../interfaces/iuser.js";
 import { IDataService } from "../interfaces/idataservice";
 
-export default class DataService implements IDataService {
+export class DataService implements IDataService {
 
   static $inject = ["$http", "$q"];
   constructor(

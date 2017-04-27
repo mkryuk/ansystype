@@ -1,7 +1,8 @@
+import * as angular from "angular";
 import { IAuthService } from 'interfaces/iauthservice';
 import { MainController } from "controllers/mainController/main.controller";
 
-describe("MainController", () => {
+describe("Main Controller", () => {
   let controller: MainController;
   let mockService: IAuthService;
 

@@ -20,6 +20,11 @@ An example on how to use TypeScript with AngularJS 1.* and SystemJS module loade
 
 4. Try to change the ts files and watch the changes in browser
 
+## For tests run:
+ ```bash
+ npm run test
+ ```
+
 ## For cleanup run:
  ```bash
  npm run cleanup

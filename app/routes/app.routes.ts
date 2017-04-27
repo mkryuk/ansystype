@@ -1,10 +1,11 @@
 import { MainController } from "controllers/mainController/main.controller";
 
-export default class Router {
+export class Router {
   static $inject = ["$stateProvider", "$urlRouterProvider"];
-  constructor($stateProvider: ng.ui.IStateProvider,
-    $urlRouterProvider: ng.ui.IUrlRouterProvider) {
-
+  constructor(
+    $stateProvider: ng.ui.IStateProvider,
+    $urlRouterProvider: ng.ui.IUrlRouterProvider
+  ) {
     // for any unmatched url, redirect to /home
     $urlRouterProvider.otherwise("/home");
     //

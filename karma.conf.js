@@ -17,7 +17,7 @@ module.exports = function (config) {
     files: [{
       pattern: "app/**/*.js"
     }],
-    
+
     systemjs: {
       // Path to your SystemJS configuration file 
       configFile: 'config.js',
@@ -35,11 +35,16 @@ module.exports = function (config) {
       ],
       // testFileSuffix: "spec.js",
       config: {
-        paths: {
-          "typescript": "node_modules/typescript/lib/typescript.js",
-          "systemjs": "node_modules/systemjs/dist/system.js",
-          'angular-mocks': 'node_modules/angular-mocks/angular-mocks.js',
-          'system-polyfills': 'node_modules/systemjs/dist/system-polyfills.js',
+        // paths: {
+        //   "typescript": "node_modules/typescript/lib/typescript.js",
+        //   "systemjs": "node_modules/systemjs/dist/system.js",
+        //   'angular-mocks': 'node_modules/angular-mocks/angular-mocks.js',
+        //   'system-polyfills': 'node_modules/systemjs/dist/system-polyfills.js',
+        // },
+        packages: {
+          'app': {
+            defaultExtension: 'js'
+          }
         }
       }
     },
