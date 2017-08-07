@@ -21,6 +21,10 @@ export class Router {
         url: "/todos",
         templateUrl: "app/views/todo.layout.html"
       })
+      .state("photos", {
+        url: "/photos",
+        templateUrl: "app/views/photos.layout.html"
+      })
       .state("login", {
         url: "/login",
         templateUrl: "app/views/login.layout.html"

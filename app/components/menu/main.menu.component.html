@@ -1,6 +1,7 @@
   <ul class="nav nav-tabs">
     <li role="presentation" ng-class="{active: $state.includes('home')}"><a href="#" ui-sref="home">Home</a></li>
     <li role="presentation" ng-if="mainMenuCtrl.isUserLoggedIn()" ng-class="{active: $state.includes('todos')}"><a ui-sref="todos">Todos</a></li>
+    <li role="presentation" ng-class="{active: $state.includes('photos')}"><a ui-sref="photos">Photos</a></li>
     <li role="presentation" ng-if="!mainMenuCtrl.isUserLoggedIn()" ng-class="{active: $state.includes('login')}"><a ui-sref="login">Login</a></li>
     <li role="presentation" ng-if="mainMenuCtrl.isUserLoggedIn()"><a href="#" ng-click="mainMenuCtrl.logOut()">Logout</a></li>
   </ul>
