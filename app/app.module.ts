@@ -8,6 +8,7 @@ import { ngModule as servicesModule } from "services/services.module";
 import { ngModule as loginModule } from "components/login/login.module";
 import { ngModule as mainMenuModule } from "components/menu/main.menu.module";
 import { ngModule as todosModule } from "components/todos/todos.module";
+import { ngModule as photosModule } from "components/photos/photos.module";
 
 // creating main app module and MainController
 let ngModule = angular
@@ -16,7 +17,8 @@ let ngModule = angular
     servicesModule.name,
     loginModule.name,
     mainMenuModule.name,
-    todosModule.name
+    todosModule.name,
+    photosModule.name
   ])
   .config(Router)
   .controller("MainController", MainController)
